@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+<div class="pt-5"></div>
+{% block content %}
+<div class="table-sm pt-5">
+<table class="table-bordered table-hover">
+<thead class="thead-light">
+    <th>ID</th>
+    {% for title in pReq[1000].keys() %}
+    <th>{{ title }}</th>
+{% endfor %}
+</thead>
+    {%  for key in pReq.keys() %}
+        <tr>
+        <th>{{ key }}</th>
+        {% for data in pReq[key] %}
+            <td>{{ data }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+</table>
+</div>
+
+{% endblock %}

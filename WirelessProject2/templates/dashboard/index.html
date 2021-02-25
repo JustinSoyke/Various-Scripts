@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="container pt-5">
+    <h3 class="align-center">Dashboard</h3>
+    <br />
+    <a href="{{ url_for('dashboard.checkParking') }}" class="pt-2 btn-sm btn-info">Check Parking Spaces</a>
+</div>
+
+</body>
+</html>
+
+{% endblock %}

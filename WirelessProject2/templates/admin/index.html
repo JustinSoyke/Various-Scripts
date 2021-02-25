@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+<body>
+    {% block content %}
+
+<div class="container pt-3">
+    <p class="h2 pb-4">Admin Section</p>
+    <a href="{{ url_for('admin.profile') }}" class="btn-sm btn-info">Lookup Users</a>
+
+    <a href="{{ url_for('admin.platedb') }}" class="btn-sm btn-info">View Plates Database</a>
+    <a href="{{ url_for('admin.capturelog') }}" class="btn-sm btn-info">View Capture Logs</a>
+
+</div>
+{% endblock %}
+
+
+
+</body>
+</html>
+
+

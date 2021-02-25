@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container" style="padding-top:40px;">
+<form action="" method="post" role="form">
+        {{ form.csrf }}
+    <div class="input-group input-group-sm col-sm-3">
+        {{ form.userid(class="form-control-sm form-control input-group-prepend",style="width:25px;")}}
+        <input class="input-group-btn btn-secondary btn-sm form-control-sm form-control" type="submit" value="Lookup UserID">
+    </div>
+    </form>
+</div>
+{% endblock %}

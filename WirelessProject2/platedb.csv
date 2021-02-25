@@ -1,0 +1,4 @@
+id,name,title,balance,plateNumber,isParked,parkCount,disabledSpot
+1000,Justin,Student,175,BS58XR,False,5,False
+1001,Test,Teacher,150,ABC123,False,10,False
+1002,Tee,aaa,445,ABY123,False,11,False

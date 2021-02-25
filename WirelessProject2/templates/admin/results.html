@@ -1,0 +1,18 @@
+{% extends 'admin/profile.html' %}
+
+{% block content %}
+
+<div class="container" style="padding-top:25px;">
+
+    <a href="{{ url_for('admin.profile') }}" class="form-control-sm btn-sm btn-info">Go Back</a>
+
+
+    <p> User Lookup Results: </p><br /><br />
+    <p>Name: {{ apireq["name"] }}</p>
+    <p>Title: {{ apireq["title"] }}</p>
+    <p>Available Balance: {{ apireq["balance"] }}</p>
+    <p>Licence Plate Number: {{ apireq["plateNumber"] }}</p>
+    <p>Currently Parked: {{ apireq["isParked"] }}</p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+<div class="pt-5"></div>
+{% block content %}
+<div class="table-sm pt-5">
+<table class="table-bordered table-hover">
+<thead class="thead-light">
+    <th>ID</th>
+    {% for title in cLog[1].keys() %}
+    <th>{{ title }}</th>
+{% endfor %}
+    <th>Image</th>
+</thead>
+    {%  for key in cLog.keys() %}
+        <tr>
+        <th>{{ key }}</th>
+
+        {% for data in cLog[key] %}
+            <td>{{ data }}</td>
+            {% endfor %}
+                    <td><img src="/{{ cLog[key]["imageLocation"] }}" height="50" width="50"/></td>
+
+        </tr>
+        {% endfor %}
+</table>
+</div>
+
+{% endblock %}
+

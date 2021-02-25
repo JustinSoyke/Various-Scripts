@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+    <p style="padding-top:40px;">There is {{ empty }} empty parking space out of {{ full+empty }} available spaces.</p>
+</div>
+<br /><br />
+<table class="table-bordered table">
+<tr>
+    <td style="background-color:lightcoral; border-color:black;">1</td>
+    <td style="background-color:lightcoral; border-color:black;">2</td>
+    <td style="background-color:lightcoral; border-color:black;">3</td>
+    <td style="background-color:lightcoral; border-color:black;">4</td>
+</tr>
+<tr>
+    <td style="background-color:lightcoral; border-color:black;">5</td>
+    {%  if spaces["5"]["status"] == "empty" %}
+    <td style="background-color:lightgreen; border-color:green;">6</td>
+            {% else %}
+    <td style="background-color:lightcoral; border-color:black;">6</td>
+
+    {% endif %}
+    <td style="background-color:lightcoral; border-color:black;">7</td>
+    <td style="background-color:lightcoral; border-color:black;">8</td>
+</tr>
+<tr>
+    <td style="background-color:lightcoral; border-color:black;">9</td>
+    <td style="background-color:lightcoral; border-color:black;">10</td>
+    <td style="background-color:lightcoral; border-color:black;">11</td>
+    <td style="background-color:lightcoral; border-color:black;">12</td>
+</tr>
+</table>
+
+
+<p style="font-size:8pt;">Refresh the page (Twice..?) to update</p>
+{% endblock %}

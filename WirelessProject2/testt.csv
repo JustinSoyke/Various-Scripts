@@ -1,0 +1,3 @@
+id,name,title,balance,plateNumber,isParking,parkCount,disabledSpot
+1002,Test2,Title2,400,AAAAAA,False,4,False
+1003,Test3,Title3,300,333AAA,False,3,False
